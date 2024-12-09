@@ -6,17 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BFE2F11F2D0684DB009E9FBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F11B2D0684DB009E9FBC /* ContentView.swift */; };
+		BFE2F1202D0684DB009E9FBC /* ScreenableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F11D2D0684DB009E9FBC /* ScreenableApp.swift */; };
+		BFE2F1212D0684DB009E9FBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE2F1182D0684DB009E9FBC /* Preview Assets.xcassets */; };
+		BFE2F1222D0684DB009E9FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE2F11A2D0684DB009E9FBC /* Assets.xcassets */; };
+		BFE2F1252D068584009E9FBC /* Fonts.txt in Resources */ = {isa = PBXBuildFile; fileRef = BFE2F1242D068584009E9FBC /* Fonts.txt */; };
+		BFE2F1262D068584009E9FBC /* Backgrounds.txt in Resources */ = {isa = PBXBuildFile; fileRef = BFE2F1232D068584009E9FBC /* Backgrounds.txt */; };
+		BFE2F1282D06869F009E9FBC /* ScreenableDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F1272D06869F009E9FBC /* ScreenableDocument.swift */; };
+		BFE2F12B2D0695F1009E9FBC /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F12A2D0695F1009E9FBC /* RenderView.swift */; };
+		BFE2F12D2D06A0CC009E9FBC /* Bundle-StringArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F12C2D06A0CC009E9FBC /* Bundle-StringArray.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BFE2F1062D0684CF009E9FBC /* Screenable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screenable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE2F1182D0684DB009E9FBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFE2F11A2D0684DB009E9FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFE2F11B2D0684DB009E9FBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFE2F11C2D0684DB009E9FBC /* Screenable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Screenable.entitlements; sourceTree = "<group>"; };
+		BFE2F11D2D0684DB009E9FBC /* ScreenableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenableApp.swift; sourceTree = "<group>"; };
+		BFE2F1232D068584009E9FBC /* Backgrounds.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Backgrounds.txt; sourceTree = "<group>"; };
+		BFE2F1242D068584009E9FBC /* Fonts.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fonts.txt; sourceTree = "<group>"; };
+		BFE2F1272D06869F009E9FBC /* ScreenableDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenableDocument.swift; sourceTree = "<group>"; };
+		BFE2F1292D068FD0009E9FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BFE2F12A2D0695F1009E9FBC /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		BFE2F12C2D06A0CC009E9FBC /* Bundle-StringArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-StringArray.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		BFE2F1082D0684CF009E9FBC /* Screenable */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Screenable;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BFE2F1032D0684CF009E9FBC /* Frameworks */ = {
@@ -32,7 +47,7 @@
 		BFE2F0FD2D0684CF009E9FBC = {
 			isa = PBXGroup;
 			children = (
-				BFE2F1082D0684CF009E9FBC /* Screenable */,
+				BFE2F11E2D0684DB009E9FBC /* Screenable */,
 				BFE2F1072D0684CF009E9FBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,32 @@
 				BFE2F1062D0684CF009E9FBC /* Screenable.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE2F1192D0684DB009E9FBC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2F1182D0684DB009E9FBC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFE2F11E2D0684DB009E9FBC /* Screenable */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2F1292D068FD0009E9FBC /* Info.plist */,
+				BFE2F11B2D0684DB009E9FBC /* ContentView.swift */,
+				BFE2F1272D06869F009E9FBC /* ScreenableDocument.swift */,
+				BFE2F12A2D0695F1009E9FBC /* RenderView.swift */,
+				BFE2F12C2D06A0CC009E9FBC /* Bundle-StringArray.swift */,
+				BFE2F11D2D0684DB009E9FBC /* ScreenableApp.swift */,
+				BFE2F11A2D0684DB009E9FBC /* Assets.xcassets */,
+				BFE2F1232D068584009E9FBC /* Backgrounds.txt */,
+				BFE2F1242D068584009E9FBC /* Fonts.txt */,
+				BFE2F11C2D0684DB009E9FBC /* Screenable.entitlements */,
+				BFE2F1192D0684DB009E9FBC /* Preview Content */,
+			);
+			path = Screenable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +100,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				BFE2F1082D0684CF009E9FBC /* Screenable */,
 			);
 			name = Screenable;
 			packageProductDependencies = (
@@ -109,6 +147,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE2F1252D068584009E9FBC /* Fonts.txt in Resources */,
+				BFE2F1262D068584009E9FBC /* Backgrounds.txt in Resources */,
+				BFE2F1212D0684DB009E9FBC /* Preview Assets.xcassets in Resources */,
+				BFE2F1222D0684DB009E9FBC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE2F1282D06869F009E9FBC /* ScreenableDocument.swift in Sources */,
+				BFE2F11F2D0684DB009E9FBC /* ContentView.swift in Sources */,
+				BFE2F12D2D06A0CC009E9FBC /* Bundle-StringArray.swift in Sources */,
+				BFE2F12B2D0695F1009E9FBC /* RenderView.swift in Sources */,
+				BFE2F1202D0684DB009E9FBC /* ScreenableApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +304,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Screenable/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -284,6 +332,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Screenable/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
