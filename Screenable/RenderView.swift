@@ -24,6 +24,7 @@ struct RenderView: View {
                 context.draw(Image(document.backgroundImage), in: fullSizeRect)
             }
             // add a gradient
+            context.fill(fullSizePath, with: .linearGradient( Gradient(colors: [document.backgroundColorTop, document.backgroundColorBottom]), startPoint: .zero, endPoint: CGPoint(x: 0, y: size.height)))
             
             // draw the caption
             var verticalOffset = 0.0
@@ -45,6 +46,15 @@ struct RenderView: View {
                 }
             }
             
+            //add shadow then draw phone
+            if document.dropShadowLocation > 1 {
+                var contextCopy = context
+                contextCopy.addFilter(.shadow(color: .black, radius: Double(document.dropShadowStrength)))
+                contextCopy.addFilter(.shadow(color: .black, radius: Double(document.dropShadowStrength)))
+                contextCopy.draw(Image("iPhone"), in: CGRect(origin: CGPoint(x: horizontalOffset, y: verticalOffset), size: phoneSize))
+            }
+            
+            //draw screenshot (drag and drop)
             if let screenshot = context.resolveSymbol(id: "Image") {
                 // more code to come
                 let drawPosition = CGPoint(x: horizontalOffset + imageInsets.width, y: verticalOffset + imageInsets.height)
@@ -52,16 +62,18 @@ struct RenderView: View {
                 context.draw(screenshot, in: CGRect(origin: drawPosition, size: drawSize))
             }
             
-            // draw the phone
+            // draw the phone on top
             context.draw(Image("iPhone"), in: CGRect(origin: CGPoint(x: horizontalOffset, y: verticalOffset), size: phoneSize))
             
         } symbols: {
             // add custom SwiftUI views
             Text(document.caption)
                 .font(.custom(document.font, size: Double(document.fontSize)))
-                .foregroundStyle(.black)
+                .foregroundStyle(document.captionColor)
                 .multilineTextAlignment(.center)
                 .tag("Text")
+                .shadow(color: document.dropShadowLocation == 1 || document.dropShadowLocation == 3 ? .black : .clear, radius: Double(document.dropShadowStrength))
+                .shadow(color: document.dropShadowLocation == 1 || document.dropShadowLocation == 3 ? .black : .clear, radius: Double(document.dropShadowStrength))
             
             if let userImage = document.userImage, let nsImage = NSImage(data: userImage) {
                 Image(nsImage: nsImage)

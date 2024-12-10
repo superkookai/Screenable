@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFCBF9CD2D07D937007554B7 /* ColorCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCBF9CC2D07D937007554B7 /* ColorCodable.swift */; };
 		BFE2F11F2D0684DB009E9FBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F11B2D0684DB009E9FBC /* ContentView.swift */; };
 		BFE2F1202D0684DB009E9FBC /* ScreenableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F11D2D0684DB009E9FBC /* ScreenableApp.swift */; };
 		BFE2F1212D0684DB009E9FBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE2F1182D0684DB009E9FBC /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFCBF9CC2D07D937007554B7 /* ColorCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodable.swift; sourceTree = "<group>"; };
 		BFE2F1062D0684CF009E9FBC /* Screenable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screenable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE2F1182D0684DB009E9FBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFE2F11A2D0684DB009E9FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				BFE2F1272D06869F009E9FBC /* ScreenableDocument.swift */,
 				BFE2F12A2D0695F1009E9FBC /* RenderView.swift */,
 				BFE2F12C2D06A0CC009E9FBC /* Bundle-StringArray.swift */,
+				BFCBF9CC2D07D937007554B7 /* ColorCodable.swift */,
 				BFE2F11D2D0684DB009E9FBC /* ScreenableApp.swift */,
 				BFE2F11A2D0684DB009E9FBC /* Assets.xcassets */,
 				BFE2F1232D068584009E9FBC /* Backgrounds.txt */,
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCBF9CD2D07D937007554B7 /* ColorCodable.swift in Sources */,
 				BFE2F1282D06869F009E9FBC /* ScreenableDocument.swift in Sources */,
 				BFE2F11F2D0684DB009E9FBC /* ContentView.swift in Sources */,
 				BFE2F12D2D06A0CC009E9FBC /* Bundle-StringArray.swift in Sources */,
